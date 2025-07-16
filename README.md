@@ -1,40 +1,56 @@
-# ✨ Full Stack Realtime Chat App ✨
+# WastChat 💬
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+**WastChat** is a modern full-stack real-time chat application built with the MERN stack, Vite, TailwindCSS, Socket.IO, and Zustand. Designed for speed, style, and scalability, WastChat allows users to exchange messages, images, and enjoy personalized themes — all in real-time.
 
-Highlights:
+---
 
-- 🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
-- 🎃 Authentication && Authorization with JWT
-- 👾 Real-time messaging with Socket.io
-- 🚀 Online user status
-- 👌 Global state management with Zustand
-- 🐞 Error handling both on the server and on the client
-- ⭐ At the end Deployment like a pro for FREE!
-- ⏳ And much more!
+## 🚀 Features
 
-### Setup .env file
+- 🔐 Secure authentication (JWT & Cookies)
+- 🧠 Persistent state with Zustand
+- 💬 Real-time chat with Socket.IO
+- 🎨 Theme customization via DaisyUI
+- 📷 Image/file upload via Cloudinary
+- 📨 Read receipts & message timestamps
+- 💡 Responsive UI with Tailwind + Framer Motion
+- 🌐 Google OAuth (coming soon)
 
-```js
-MONGODB_URI=...
-PORT=5001
-JWT_SECRET=...
+---
 
-CLOUDINARY_CLOUD_NAME=...
-CLOUDINARY_API_KEY=...
-CLOUDINARY_API_SECRET=...
+## 🛠️ Tech Stack
 
-NODE_ENV=development
-```
+| Layer        | Tools                                 |
+|-------------|----------------------------------------|
+| Frontend     | React, Vite, Zustand, DaisyUI, TailwindCSS |
+| Backend      | Express.js, MongoDB, Mongoose, JWT, Socket.IO |
+| Media Upload | Cloudinary                            |
+| Auth         | JWT, Cookies  |
+| Styling      | TailwindCSS, DaisyUI, Lucide Icons     |
 
-### Build the app
+---
 
-```shell
-npm run build
-```
+## 📦 Installation
 
-### Start the app
+### 🔧 Backend Setup
 
-```shell
-npm start
-```
+```bash
+cd backend
+npm install
+# Create .env and set: MONGODB_URI, JWT_SECRET, CLOUDINARY creds
+npm run dev
+
+⚙️ Environment Variables
+# Backend (.env)
+MONGODB_URI=mongodb://localhost:27017/wastchat
+JWT_SECRET=your_jwt_secret (e.g openssl rand -base64 32)
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_key
+CLOUDINARY_API_SECRET=your_secret
+
+
+
+### 🔧 Frontend Setup
+cd frontend
+npm install
+npm run dev
+
